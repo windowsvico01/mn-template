@@ -52,7 +52,6 @@ module.exports = {
     'src/store/**/*': 'plugins.vuex',
   },
   complete: function(data, { chalk }) {
-    console.log('complate')
     // const green = chalk.green
 
     // sortDependencies(data, green)

@@ -22,7 +22,7 @@ export default {
   },
   components: {
     {{#plugins.router}}
-    {{esle}}
+    {{else}}
     mTemplate
     {{/plugins.router}}
   },
