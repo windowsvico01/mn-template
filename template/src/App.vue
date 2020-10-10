@@ -10,7 +10,7 @@
 
 <script>
 {{#unless plugins.router}}
-import mTemplate from '@/components/goApp';
+import mTemplate from '@/components/template';
 {{/unless}}
 
 export default {
