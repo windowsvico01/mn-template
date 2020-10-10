@@ -15,32 +15,44 @@ const pkg = require('./package.json')
 module.exports = {
   prompts: {
     name: {
-      when: 'isNotTest',
       type: 'string',
       required: true,
       message: '请输入项目名称：',
     },
     description: {
-      when: 'isNotTest',
       type: 'string',
       required: false,
       message: '请输入项目描述：',
       default: 'VUE项目',
     },
     author: {
-      when: 'isNotTest',
       type: 'string',
       message: '请输入作者名字：',
     },
-    router: {
-      when: 'isNotTest',
-      type: 'confirm',
-      message: '是否需要路由Router？',
-    },
-    vuex: {
-      when: 'isNotTest',
-      type: 'confirm',
-      message: '是否需要VUEX？'
+    // router: {
+    //   type: 'confirm',
+    //   message: '是否需要路由Router？',
+    // },
+    // vuex: {
+    //   type: 'confirm',
+    //   message: '是否需要VUEX？'
+    // },
+    plugins: {
+      type: 'checkbox',
+      message: '选择你需要的插件',
+      choices: [
+        {
+            name: "vant",
+            checked: true // 默认选中
+        },
+        // new inquirer.Separator("--- 分隔符 ---"), // 自定义分隔符
+        {
+            name: "vuex",
+        },
+        {
+            name: "router"
+        },
+      ]
     }
   },
   filters: {
