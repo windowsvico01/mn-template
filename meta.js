@@ -31,7 +31,21 @@ module.exports = {
       when: 'isNotTest',
       type: 'string',
       message: '请输入作者名字：',
+    },
+    router: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: '是否需要路由Router？',
+    },
+    vuex: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: '是否需要VUEX？'
     }
+  },
+  filters: {
+    'src/router/**/*': 'router',
+    'src/store/**/*': 'vuex',
   },
   complete: function(data, { chalk }) {
     console.log('complate')

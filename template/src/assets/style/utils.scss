@@ -1,0 +1,16 @@
+$publicColor:#28bc9c;
+$themeColor:$publicColor;
+$publicColorHover:#1c8e75;
+$themeColorHover:$publicColorHover;
+@mixin lineclamp ($line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+@mixin clearfloat{
+  zoom:1;
+  &:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
+}
