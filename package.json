@@ -1,0 +1,19 @@
+{
+  "name": "mn-template",
+  "version": "1.0.0",
+  "description": "mn-cli模板库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/windowsvico01/mn-template.git"
+  },
+  "author": "vico",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/windowsvico01/mn-template/issues"
+  },
+  "homepage": "https://github.com/windowsvico01/mn-template#readme"
+}
