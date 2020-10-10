@@ -1,26 +1,26 @@
 import Vue from 'vue'
-{{#router}}
+{{#plugins.router}}
 import router from './router'
-{{/router}}
-{{#vuex}}
+{{/plugins.router}}
+{{#plugins.vuex}}
 import store from './store'
-{{/vuex}}
+{{/plugins.vuex}}
 import "lib-flexible";
-{{#vant}}
+{{#plugins.vant}}
 import Vant from 'vant';
 import 'vant/lib/index.css';
-{{/vant}}
+{{/plugins.vant}}
 import App from './App.vue'
-{{#vant}}
+{{#plugins.vant}}
 Vue.use(Vant);
-{{/vant}}
+{{/plugins.vant}}
 new Vue({
-  {{#router}}
+  {{#plugins.router}}
   router,
-  {{/router}}
-  {{#vuex}}
+  {{/plugins.router}}
+  {{#plugins.vuex}}
   store,
-  {{/vuex}}
+  {{/plugins.vuex}}
   render: h => h(App)
 }).$mount('#app')
 

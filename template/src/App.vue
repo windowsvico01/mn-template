@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    {{#router}}
+    {{#plugins.router}}
     <router-view />
     {{else}}
     <m-template></m-template>
-    {{/router}}
+    {{/plugins.router}}
   </div>
 </template>
 
 <script>
-{{#unless router}}
+{{#unless plugins.router}}
 import mTemplate from '@/components/goApp';
 {{/unless}}
 
@@ -19,10 +19,10 @@ export default {
     
   },
   components: {
-    {{#router}}
+    {{#plugins.router}}
     {{esle}}
     mTemplate
-    {{/router}}
+    {{/plugins.router}}
   },
   computed: {
 

@@ -29,14 +29,6 @@ module.exports = {
       type: 'string',
       message: '请输入作者名字：',
     },
-    // router: {
-    //   type: 'confirm',
-    //   message: '是否需要路由Router？',
-    // },
-    // vuex: {
-    //   type: 'confirm',
-    //   message: '是否需要VUEX？'
-    // },
     plugins: {
       type: 'checkbox',
       message: '选择你需要的插件',
@@ -56,8 +48,8 @@ module.exports = {
     }
   },
   filters: {
-    'src/router/**/*': 'router',
-    'src/store/**/*': 'vuex',
+    'src/router/**/*': 'plugins.router',
+    'src/store/**/*': 'plugins.vuex',
   },
   complete: function(data, { chalk }) {
     console.log('complate')
