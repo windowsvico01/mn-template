@@ -9,23 +9,10 @@ module.exports = {
     publicPath: './',
     pages:{
         index:{
-            entry:'src/main.ts',
+            entry:'src/main.js',
             title:'好孕妈妈'
         }
     },
-    // configureWebpack: {
-    //     resolve: {
-    //         extensions: ['.js'],
-    //         alias: {
-    //           'flvjs':'flv.js/dist/flv.js'
-    //         }
-    //     },
-    //     plugins: [
-    //         new webpack.ProvidePlugin({
-    //             flvjs:'flvjs'
-    //           })
-    //     ]
-    // },
     devServer: {
         proxy: {
             '/api': {
