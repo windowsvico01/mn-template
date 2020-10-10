@@ -16,7 +16,9 @@ import mTemplate from '@/components/template';
 export default {
   name: 'App',
   data() {
-    
+    return {
+      msg: 'hello'
+    }
   },
   components: {
     {{#plugins.router}}
