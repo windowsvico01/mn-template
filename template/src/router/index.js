@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/views/home/index.vue'
 
-import localStorage from '@/utils/localStorage'
+// import localStorage from '@/utils/localStorage'
 
 Vue.use(VueRouter)
 
@@ -25,7 +25,7 @@ const router = new VueRouter({
 
 
 router.beforeEach((to, from, next) => {
-  const token = localStorage.get('token');
+  // const token = localStorage.get('token');
   // if (to.query.SharePeople) {
   //   localStorage.set('SharePeople', to.query.SharePeople)
   // }
